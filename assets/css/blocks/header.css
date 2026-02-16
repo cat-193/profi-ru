@@ -107,7 +107,7 @@
 		position: absolute;
 		width: 100%;
 		padding: 20px 16px 0;
-		min-height: 88dvh;
+		min-height: calc(100dvh - 89px);
 		left: 0;
 		top: 90px;
 		background: #F0F0F0;
