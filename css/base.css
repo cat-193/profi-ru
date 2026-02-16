@@ -1,0 +1,67 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: var(--font-family);
+	background: #F0F0F0;
+	min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.site-button {
+	border-radius: 12px;
+	padding: 16px 32px;
+	background: var(--pink);
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--white);
+	transition: background 0.3s;
+}
+
+@media (hover: hover) {
+	.site-button:hover {
+		background: var(--pink-light);
+	}
+}
+
+.container {
+	padding: 0 clamp(1rem, 2.776vw + 0.349rem, 3.125rem);
+	max-width: 1280px;
+	margin: 0 auto;
+}
