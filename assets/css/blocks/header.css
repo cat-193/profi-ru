@@ -5,11 +5,15 @@
 .header__wrapper {
 	display: flex;
 	align-items: center;
-	padding: clamp(1.25rem, 0.163vw + 1.212rem, 1.375rem) 0;
+	padding: 20px 0;
 }
 
 .logo {
 	margin-right: 32px;
+}
+
+.logo__image {
+	max-width: none;
 }
 
 .header__box {

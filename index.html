@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg">
 	<link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="header__wrapper">
-				<a class="logo" href="#" >
+				<a class="logo" href="#">
 					<img class="logo__image" src="assets/images/logo.svg" alt="logo">
 				</a>
 
@@ -21,21 +23,21 @@
 				</button>
 
 				<div class="header__box">
-						<nav class="header__nav">
-							<ul class="header__list">
-								<li class="header__item">
-									<a class="header__link" href="">How It Works</a>
-								</li>
-								<li class="header__item">
-									<a class="header__link" href="">Testimonials</a>
-								</li>
-								<li class="header__item">
-									<a class="header__link" href="">Benefits</a>
-								</li>
-							</ul>
-						</nav>
-						<button class="header__button site-button">Join Now</button>
-	
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a class="header__link" href="">How It Works</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="">Testimonials</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="">Benefits</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="header__button site-button">Join Now</button>
+
 					<footer class="header-mobile__footer">
 						<p class="header-mobile__footer-copyright">
 							© 2025 {offer_name}
@@ -50,9 +52,57 @@
 
 	</header>
 
+	<main class="main container">
+		<h1 class="visually-hidden">Profit test</h1>
+		<section class="join">
+			<div class="join__content">
+				<h2 class="join__title">
+					Join a community where
+					profits <span class="join__title--purple">grow with you</span>
+				</h2>
+				<p class="join__text">
+					{offer_name} is a private community for those who want not only to earn money but to share experience and
+					support other
+					investors
+				</p>
+				<picture>
+					<source media="(max-width: 440px)" srcset="assets/images/join/join-mobile.webp">
+					<img class="join__image" src="assets/images/join/join.webp" alt="garden">
+				</picture>
+
+				<ul class="join__list">
+					<li class="join__item">
+						<h3 class="join__item-title">12,000+</h3>
+						<p class="join__item-text">Active members</p>
+					</li>
+
+					<li class="join__item">
+						<h3 class="join__item-title">£47M</h3>
+						<p class="join__item-text">Total profit earned</p>
+					</li>
+
+					<li class="join__item">
+						<h3 class="join__item-title">up to 11% per year</h3>
+						<p class="join__item-text">Average member return</p>
+					</li>
+				</ul>
+
+				<div class="join__attention attention">
+					<h3 class="attention__title">!Attention!</h3>
+					<div class="attention__box">
+						<p class="attention__text">
+							The call from your personal manager is a key step in launching your investment strategy. Make sure to
+							answer it!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
 
 	<script>
-	document.addEventListener('DOMContentLoaded', function () {
+		document.addEventListener('DOMContentLoaded', function () {
 			const burger = document.querySelector('.burger-menu');
 			const mobileMenu = document.querySelector('.header__box');
 
@@ -78,4 +128,5 @@
 		});
 	</script>
 </body>
+
 </html>
