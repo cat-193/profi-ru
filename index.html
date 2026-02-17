@@ -416,7 +416,29 @@
 						</p>
 					</div>
 
-					<form class="feedback__form" action="">
+
+						{{form}}
+					
+					<style>
+						.aio-sdk-form {
+							--aio-sdk-form-padding: 30px 30px 20px;
+					
+							--aio-sdk-input-bg: white;
+							--aio-sdk-input-font-size: 1em;
+							--aio-sdk-input-border: #ced4da;
+							--aio-sdk-input-border-radius: 0px;
+							--aio-sdk-input-padding: 15px 20px;
+							--aio-sdk-input-color: black;
+					
+							--aio-sdk-submit-bg: #6f0359b;
+							--aio-sdk-submit-padding: 15px 20px;
+							--aio-sdk-submit-border: transparent;
+							--aio-sdk-submit-border-radius: 0px;
+							--aio-sdk-submit-color: white;
+							--aio-sdk-submit-font-size: var(--aio-sdk-input-font-size);
+						}
+					</style>
+					<!-- <form class="feedback__form" action="">
 						<div class="feedback__inputs">
 							<input class="feedback__input" type="text" placeholder="First name" required>
 							<input class="feedback__input" type="text" placeholder="Last name" required>
@@ -424,7 +446,7 @@
 							<input class="feedback__input" type="tel" placeholder="+44" required>
 						</div>
 						<button class="feedback__button site-button" type="submit">Button</button>
-					</form>
+					</form> -->
 				</div>
 			</div>
 		</section>
@@ -439,7 +461,7 @@
 		</div>
 	</footer>
 
-
+<script src="https://sdk.aio.ru/sdk.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			const burger = document.querySelector('.burger-menu');
