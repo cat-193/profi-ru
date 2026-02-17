@@ -1010,6 +1010,139 @@ button {
 
 @media (max-width: 576px) {
 	.protect__icon {
-		margin-bottom: 32px;
+		margin-bottom: 34px;
+	}
+}
+
+/* FEEDBACK */
+
+.feedback {
+	background-image: url('../images/feedback/bg.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.feedback__content {
+	padding: clamp(2.5rem, 3.265vw + 1.735rem, 5rem) clamp(0rem, 4.808vw - 2.308rem, 2.5rem) clamp(2.5rem, 4.082vw + 1.543rem, 5.625rem);
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.feedback__left {
+	max-width: clamp(21.438rem, 26.082vw + 8.918rem, 35rem);
+	margin-top: 46px;
+}
+
+.feedback__title {
+	font-weight: 700;
+	font-size: clamp(2rem, 1.306vw + 1.694rem, 3rem);
+	line-height: 110%;
+	text-transform: capitalize;
+	color: var(--white);
+	margin-bottom: clamp(1.25rem, 1.633vw + 0.867rem, 2.5rem);
+}
+
+.feedback__title-pink {
+	color: var(--pink-light);
+}
+
+
+.feedback__text {
+	font-weight: 500;
+	font-size: clamp(1rem, 0.163vw + 0.962rem, 1.125rem);
+	line-height: 140%;
+	color: var(--white);
+	max-width: 453px;
+}
+
+.feedback__form {
+	background: var(--white);
+	border-radius: 20px;
+	padding: 40px clamp(1.25rem, 1.633vw + 0.867rem, 2.5rem);
+	flex: 1;
+}
+
+.feedback__inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 32px;
+}
+
+.feedback__input {
+	border: 1px solid rgba(17, 17, 17, 0.1);
+	border-radius: 8px;
+	padding: 17px 16px;
+}
+
+.feedback__input::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: rgba(17, 17, 17, 0.3);
+}
+
+.feedback__button {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+
+	.feedback {
+		background-image: url('../images/feedback/bg-mobile.webp');
+	}
+
+	.feedback__content {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 60px;
+	}
+
+	.feedback__form {
+		align-items: stretch;
+		max-width: none;
+		width: 100%;
+	}
+
+	.feedback__left {
+		margin-top: 0;
+	}
+
+	.feedback__inputs {
+		gap: 10px;
+	}
+}
+
+/* footer */
+
+.footer {
+	background: var(--black);
+	margin-top: -1px;
+}
+
+.footer__content {
+	padding: 16px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__copyright {
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: var(--white);
+	opacity: 0.5;
+}
+
+@media (max-width: 440px) {
+
+	.footer__content {
+		padding: 12px 0;
+		flex-direction: column;
+		gap: 8px;
+		justify-content: center;
 	}
 }
