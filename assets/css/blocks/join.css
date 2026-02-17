@@ -1,6 +1,6 @@
 .join__content {
 	padding-top: clamp(1.25rem, 1.633vw + 0.867rem, 2.5rem);
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 
 .join__title {
