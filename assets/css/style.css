@@ -78,7 +78,7 @@ html {
 
 body {
 	font-family: var(--font-family);
-	background: #F0F0F0;
+	background: #F7F7F7;
 	min-width: 320px;
 }
 
@@ -111,6 +111,10 @@ button {
 	border: none;
 	cursor: pointer;
 	background-color: transparent;
+}
+
+.title-pink {
+	color: var(--pink);
 }
 
 .visually-hidden {
@@ -359,10 +363,6 @@ button {
 	text-wrap: balance;
 }
 
-.join__title--purple {
-	color: var(--pink);
-}
-
 .join__text {
 	max-width: clamp(21.438rem, 19.347vw + 16.903rem, 36.25rem);
 	margin: 0 auto 32px;
@@ -502,15 +502,16 @@ button {
 	flex-direction: column;
 	min-height: 280px;
 	cursor: pointer;
+	transition: background 0.3s ease;
 }
 
-.steps__item:focus {
+.steps__item:hover {
 	outline: none;
 	background: var(--pink);
 }
 
-.steps__item:focus .steps__title,
-.steps__item:focus .steps__text {
+.steps__item:hover .steps__title,
+.steps__item:hover .steps__text {
 	color: var(--white);
 }
 
@@ -538,6 +539,7 @@ button {
 	text-wrap: balance;
 	margin-top: auto;
 	margin-bottom: 20px;
+	transition: color 0.3s ease;
 }
 
 .steps__text {
@@ -545,6 +547,7 @@ button {
 	font-size: 16px;
 	line-height: 130%;
 	color: var(--pink);
+	transition: color 0.3s ease;
 }
 
 .steps__text--bold {
@@ -571,4 +574,69 @@ button {
 		margin-top: 0;
 		margin-bottom: 22px;
 	}
+}
+
+/* CHOOSE */
+
+
+.choose__content {
+	padding: 50px 0;
+}
+
+.choose__title {
+	font-weight: 600;
+	font-size: 52px;
+	line-height: 100%;
+	text-align: center;
+	color: var(--black);
+	margin-bottom: 40px;
+}
+
+.choose__table {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 24px;
+	overflow: hidden;
+	table-layout: fixed;
+}
+
+
+.choose__table th:first-child {
+	padding-left: 32px;
+}
+
+
+.choose__table th {
+	background: var(--pink-light);
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: var(--white);
+	text-align: left;
+	padding: 28px 20px;
+
+}
+
+.choose__table tbody tr:nth-child(odd) {
+	background: #f0f0f0;
+}
+
+.choose__table tbody tr:nth-child(even) {
+	background: var(--white);
+}
+
+.category-cell {
+	padding-left: 32px;
+	padding-top: 55px;
+	padding-bottom: 52px;
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--pink);
+}
+
+.choose__table-text {
+	text-wrap: balance;
+	font-weight: 600;
+	font-size: 16px;
+	color: var(--black);
 }
